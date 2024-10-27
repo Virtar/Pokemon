@@ -9,25 +9,29 @@
 </head>
 
 <body>
-<header>
-<div id="marca"> <img id="marca" src="img/logo.png"></div>
-<nav id="botonera_principal">
-	<ul>
-		<li><a href="">Inicio</a></li>
-		<li><a href="">Cartas</a></li>
-		<li><a href="contacto.html">Contacto</a></li>
-	</ul>
-</nav>
-</header>
+    <header>
+        <div id="marca">
+            <a href="index.html">
+                <img id="marca" src="img/logo.png" alt="Logo Pokemon">
+            </a>
+        </div>
+    <nav id="botonera_principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cartas.html">Cartas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
     <section id="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2528599469197!2d-58.443411323503646!3d-34.5977669571852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5ee8335b3ff%3A0xb9cebd37c40239ef!2sHadriatica!5e0!3m2!1ses-419!2sar!4v1729706119321!5m2!1ses-419!2sar" width="960" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="formulario">
             <div class="box">
                 <h1>Contactanos</h1>
-                <form action="datos.html">
-                    <label for=""></label>
-                    <input type="text" placeholder="Nombre de usuario" maxlength="20" required><br>
-                    <input type="email" placeholder="Correo" maxlength="15" required><br>
-                    <textarea name="comments" cols="30" rows="10" placeholder="Comentario"></textarea>
+                <form action="https://formspree.io/f/mrbgekwl" method="POST">
+                    
+                    <label><input type="text" name="name" placeholder="Nombre" maxlength="30" required><br></label>
+                    <label><input type="email" name="email" placeholder="Correo" maxlength="30" required><br></label>
+                    <label><textarea name="message" cols="30" rows="10" placeholder="Mensaje"></textarea></label>
                     <br><br>
                     <div class="btn-form">
                         <input type="submit" value="Enviar">
@@ -46,6 +50,6 @@
 	<p>Privacidad - Condiciones - Ubicaciones - Threads</p>
 </nav>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/formspree@latest/dist/formspree.min.js"></script>
 </body>
 </html>
