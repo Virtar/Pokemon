@@ -1,0 +1,150 @@
+/* Card Container */
+.pokemon-card {
+    font-family: Arial, sans-serif;
+    width: 250px;
+    min-height: 350px;
+    background: #fcd34d;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Header Section */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon-name {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.pokemon-name h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.pokemon-level {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.hp {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Image Container */
+.image-container {
+    background: #bfdbfe;
+    border-radius: 8px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Attacks Section */
+.attacks {
+    background: #fff9e5;
+    padding: 8px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.attack {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.energy-icons {
+    display: flex;
+    gap: 4px;
+}
+
+.energy {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.energy.normal {
+    background: #a3a3a3;
+}
+
+.energy.electric {
+    background: #fcd34d;
+}
+
+.attack-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.attack-info p {
+    margin: 0;
+}
+
+.attack-name {
+    font-weight: bold;
+}
+
+.attack-damage {
+    font-size: 0.9em;
+    color: #444;
+}
+
+/* Footer Section */
+.card-footer {
+    margin-top: auto;
+    border-top: 1px solid #888;
+    padding-top: 4px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7em;
+    color: #666;
+}
+
+.stat-label {
+    margin: 0;
+}
+
+.stat-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.stat-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.weakness {
+    background: #8b4513;
+}
+
+.resistance {
+    background: #a3a3a3;
+}
+
+.retreat {
+    background: #666;
+}
