@@ -1,5 +1,5 @@
 # Proyecto Front-End JS - Pokémon Website
-## Pre-Entrega 2do Cuatrimestre 2024
+## Entrega Final 2do Cuatrimestre 2024
 
 ### 🎯 Información del Proyecto
 - **Alumna**: Virginia Tarazaga
