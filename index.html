@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon | Pokédex</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom_bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-primary">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" width="260" height="100"
+            class="d-inline-block"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Personajes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/register.html">Registrarse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="jumbo" class="mb-5">
+      <div class="jumbotron brightness-mask">
+        <div class="container col-xxl-8 px-4 py-2">
+          <div class="row flex-lg-row-reverse align-items-center g-5">
+            <div class="col-10 col-sm-8 col-lg-6" data-aos="fade-left">
+              <img src="images/pikachu.png" class="d-block mx-lg-auto img-fluid " alt="Whisper" loading="lazy">
+            </div>
+            <div class="col-lg-6 blur-mask py-3">
+              <h1 class="display-5 fw-bold lh-1 mb-3">¡Bienvenido!</h1>
+              <p class="fs-4 fw-bold">En una realidad donde humanos y Pokémon coexisten...<br>
+                No tengas miedo, ¡Anímate!<br>
+                Pikachu te dará una descarga eléctrica,<br>
+                ¡Sumate a la aventura! ¡Al mundo Pokemon!</p>
+
+              <a data-mdb-ripple-init class="btn btn-outline-dark btn-lg mt-2" href="pages/register.html" role="button"
+                rel="nofollow" target="_blank">Regístrate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clima" class="mb-5">
+      <div class="container col-xxl-8 px-4 py-2">
+        <div class="card">
+          <div class="row g-0">
+            <div class="col-md-2 align-content-center marquee-image-container p-3">
+              <img src="images/fest.png" class="  m-auto " alt="Pokemon Go">
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title violeta-">El clima en Nanakita Park</h5>
+                <marquee>
+                  <p class="text-muted m-0">
+                    Ciudad: Sakura Nyuu Taun (<span class="rosa-" id="city"></span>) -
+                    Temperatura: <span class="rosa-" id="temperature"></span> -
+                    Sensación Térmica: <span class="rosa-" id="feels_like"></span> -
+                    Tiempo: <span class="rosa- text-capitalize" id="weather"></span> <img id="weatherIcon" src="" alt=""
+                      class="m-0"> -
+                    Humedad: <span class="rosa-" id="humidity"></span> -
+                    Presión Atmosférica: <span class="rosa-" id="pressure"></span> -
+                    Velocidad del Viento: <span class="rosa-" id="windSpeed"></span> -
+                    Visibilidad: <span class="rosa-" id="visibility"></span>
+                  </p>
+                </marquee>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+    <section id="personajes" class="mb-5">
+      <div class="container col-xxl-8 px-4 py-2">
+        <h2 class="mb-3 violeta-">Personajes</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container col-xxl-8 px-4 pt-2 pb-5">
+
+      <p><small>Pokémon GO is playable in English, French, German, Italian, Japanese, Spanish, Traditional Chinese, Korean, Thai, Brazillian Portuguese, Turkish, and Indonesian.
+©2024 Niantic, Inc. ©2024 Pokémon. ©1995–2024 Nintendo / Creatures Inc. / GAME FREAK inc. Pokémon and Pokémon character names are trademarks of Nintendo.</small></p>
+      </div>
+      <div class="btn-up">
+        <a href="#">
+          <i class="bi bi-arrow-up-square-fill fs-3 violeta-claro-"></i>
+        </a>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/bd.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        duration: 1200,
+      }
+    )
+
+  </script>
+
+</body>
+
+</html>
